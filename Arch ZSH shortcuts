@@ -1,0 +1,10 @@
+# refresh zsh
+alias s="echo '[+] Refreshing ZSH' && source $HOME/.zshrc"
+
+# package manager
+alias osu="sudo pacman -Syu" # update packages
+alias oss="pacman -Ss $@" # search package
+alias osi="sudo pacman -Sy $@" # install package
+alias osr="sudo pacman -Rns $@" # remove package
+alias oso="sudo pacman -Rs $(pacman -Qqtd)" # remove orphans
+alias osc="sudo pacman -Sc" # clear cache
